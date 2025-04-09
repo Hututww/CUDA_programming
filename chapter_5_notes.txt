@@ -1,0 +1,10 @@
+· 前四章关注程序正确性，第五章开始关注cuda文件的性能（执行速度）
+· c++有用到clock（）函数，虽然cs106b和科的课都没有用到（不过在这章第一个cpp版本样例里学习到了）
+· CUDA同样也有一种基于CUDA事件的计时方式（然后在示例代码里面学习了计时方式的具体用法）
+· 接触到了更多cuda指令：
+	cudaEventCreate（&event）初始化并标记，创建事件
+	cudaStreamCreate（&stream）：创建一个CUDA流
+	cudaEventRecord（event, stream）：在指定的流中记录事件，当流中所有在此调用之前的操作都完成后，这个事件才会被触发
+	cudaEventSynchronize（event）：阻塞CPU线程，直到指定的事件被触发
+明天继续！
+——25.04.09
